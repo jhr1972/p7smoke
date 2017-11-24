@@ -1,0 +1,18 @@
+<tns:SummaryChecks xmlns:tns="SummaryChecks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="SummaryChecks.xsd">
+    <Check type="check">
+        <checkid>1</checkid>
+        <description>whatever</description>
+        <uri>https://my-json-server.typicode.com/jhr1972/resttest/db</uri>
+        <path>$.OpenShiftStatus[?(@.somevalue == 'pod123count')].count</path>
+        <expectedresultMin>321</expectedresultMin>
+        <expectedresultMax>321</expectedresultMax>
+    </Check>    
+    <Check type="check">
+        <checkid>2</checkid>
+        <description>something</description>
+        <uri>https://my-json-server.typicode.com/jhr1972/resttest/db</uri>
+        <path>$.OpenShiftStatus[?(@.somevalue == 'pod456count')].count</path>
+        <expectedresultMin>321</expectedresultMin>
+        <expectedresultMax>321</expectedresultMax>
+    </Check>
+</tns:SummaryChecks>
